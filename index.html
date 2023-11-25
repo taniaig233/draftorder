@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyshyvanka vibes</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- css styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="order-section container section-background">
+        <div class="order-form-box">
+          <h2 class="order-title">
+            <span class="order-title-span">Your order</span> is our priority:
+            Personalized approach and quality of service
+          </h2>
+          <form class="order-form">
+            <div class="order-form-wrapper">
+              <label class="order-form-field-label" for="user-name">
+                <input
+                  class="order-form-field"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  required
+                  placeholder="Enter your full name"
+                  pattern="[a-zA-Zа-яА-ЯіЇіІєЄйЙґҐ']+"
+                />
+              </label>
+
+              <label class="order-form-field-label" for="user-email">
+                <input
+                  class="order-form-field"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </label>
+
+              <label class="order-form-field-label" for="user-comments">
+                <textarea
+                  class="order-form-comments"
+                  name="user-comments"
+                  id="user-comments"
+                  placeholder="Comments"
+                  required
+                >
+                </textarea>
+              </label>
+            </div>
+          </form>
+          <button class="order-form-btn" type="submit">
+            Send
+            <svg class="order-form-btn-icon" width="26" height="10">
+              <use href="./images/icon.svg#icon-untitled"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="order-form-image-wrapper">
+          <img
+            class="order-form-image"
+            srcset="./images/order-image-desktop1.jpg 524w,
+              ./images/order-image-tablet1.jpg 638w,
+              ./images/order-image-desktop2.jpg 2x 1048w,
+              ./images/order-image-tablet2.jpg 2x 1276w"
+            sizes="(min-width:1440px) 524px, (min-width:1280px) 524px,
+              (min-width:768px) 638px, (max-width: 768px) 0px"
+            src="./images/order-image-tablet1.jpg"
+            alt="order image"
+          />
+        </div>
+        <div class="order-form-background-wrapper"></div>
+      </section>
+    </main>
+  </body>
+</html>
